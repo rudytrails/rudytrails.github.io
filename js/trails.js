@@ -7,8 +7,8 @@ var points = [
 	{"lng":116.404, "lat":39.925, "title":"故宫", "img":"img/place/tianAnMen.jpg", "content":"第一次去北京跟我哥一起去的，很多人排队，当时有租学生证的，买票会便宜不少，哈哈！"} 
 	]
 function addMarker(point){
-	var point = new BMapGL.Point(point.lng, point.lat);
-	var marker = new BMapGL.Marker(point);
+	var pointObj = new BMapGL.Point(point.lng, point.lat);
+	var marker = new BMapGL.Marker(pointObj);
 	
 	map.addOverlay(marker);
 	// 创建图文信息窗口
@@ -16,7 +16,7 @@ function addMarker(point){
 		// 创建小车图标
 		var myIcon = new BMapGL.Icon("./img/custom/sign.png", new BMapGL.Size(52, 26));
 		// 创建Marker标注
-		var marker = new BMapGL.Marker(point, {
+		var marker = new BMapGL.Marker(pointObj, {
 			icon: myIcon
 		});
 		map.addOverlay(marker);
