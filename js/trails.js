@@ -2,6 +2,18 @@ var map = new BMapGL.Map('container');
 var point = new BMapGL.Point(116.404, 39.925);
 map.centerAndZoom(point, 5);
 map.enableScrollWheelZoom(true);
+var navi3DCtrl = new BMapGL.NavigationControl3D();  // 添加3D控件
+map.addControl(navi3DCtrl);
+// 创建城市选择控件
+var cityControl = new BMapGL.CityListControl({
+	// 控件的停靠位置（可选，默认左上角）
+	anchor: BMAP_ANCHOR_TOP_LEFT,
+	// 控件基于停靠位置的偏移量（可选）
+	offset: new BMapGL.Size(10, 5)
+});
+// 将控件添加到地图上
+map.addControl(cityControl);
+
 
 var points = [
 	{"lng":116.404, "lat":39.925, "title":"故宫", "img":"img/place/tianAnMen.jpg", "content":"第一次去北京跟我哥一起去的，很多人排队，当时有租学生证的，买票会便宜不少，哈哈！"} 
