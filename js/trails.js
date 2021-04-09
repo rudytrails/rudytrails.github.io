@@ -16,9 +16,8 @@ function addMarker(point){
 		// 创建小车图标
 		var myIcon = new BMapGL.Icon("./img/custom/sign.png", new BMapGL.Size(52, 26));
 		// 创建Marker标注
-		var marker = new BMapGL.Marker(pointObj, {
-			icon: myIcon
-		});
+		// var marker = new BMapGL.Marker(pointObj, {icon: myIcon});
+		var marker = new BMapGL.Marker(pointObj);
 		map.addOverlay(marker);
 		var sContent = `<h4 style='margin:0 0 5px 0;'>`+point.title+`</h4>
 			<img style='float:right;margin:0 4px 22px' id='imgDemo' src='`+point.img+`' width='139' height='104'/>
