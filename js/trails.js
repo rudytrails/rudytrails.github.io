@@ -13,7 +13,9 @@ var cityControl = new BMapGL.CityListControl({
 });
 // 将控件添加到地图上
 map.addControl(cityControl);
-
+map.setMapStyleV2({     
+  styleId: '4451b1c86197a837621c030aa2eb4930'
+});
 
 var points = [
 	// 北京
@@ -34,7 +36,7 @@ var points = [
 	
 	// 大连
 	,{"lng":121.588799, "lat":38.876344, "title":"星海湾", "img":"img/place/dalian/xinghaiwan.jpg", "content":"美好的回忆"}
-	,{"lng":121.68679, "lat":38.925774, "title":"猫の天空之城", "img":"img/place/dalian/theairofcat.jpg", "content":"猫の天空之城概念书店，可以撸猫哦"}
+	,{"lng":121.693195, "lat":38.932155, "title":"猫の天空之城", "img":"img/place/dalian/theairofcat.jpg", "content":"猫の天空之城概念书店，可以撸猫哦"}
 	
 	// 济南
 	
