@@ -101,3 +101,4 @@ function addMarker(point){
 for (var i = 0; i < points.length; i++) {
 	addMarker(points[i]);
 }
+$(".anchorBL").eq(0).remove();
