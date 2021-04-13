@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>Rudy的足迹</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+	<script src='./js/index.js'></script>
+	<style type="text/css">
+		body { margin:0; padding:0; }
+		#map {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+		}
+	</style>
+</head>
+	<div id='map' class="mapboxgl-map"></div>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoicnVkeW1lbW8iLCJhIjoiY2tuZmVwMWMyMXB4azJvb281amRlN2xwYyJ9.zy0U0Y3QC3aJe_SAOfjRWg';
+	var map = new mapboxgl.Map({
+		container: 'map',
+		style: 'mapbox://styles/mapbox/streets-v11',
+		center: [115.425807,34.986443],
+		minZoom: 2,
+		zoom: 1
+	});
+	mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js');
+	map.addControl(new MapboxLanguage({
+	  defaultLanguage: 'zh-Hans'
+	}));
+	var popup = new mapboxgl.Popup({closeOnClick: true,closeButton: false})
+		.setLngLat([115.425807,34.986443])
+		.setHTML(`<h4>”有勇气去改变哪些可以改变的事；<br>&nbsp;&nbsp;有度量去容忍哪些不能改变的事；<br>&nbsp;&nbsp;有智慧区别以上两类事。”</h4>`)
+		.addTo(map);
+</script>
+</html>
