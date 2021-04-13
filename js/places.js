@@ -48,9 +48,6 @@ map.on('load', function () {
 								"properties": {
 									"description": 
 										`<strong>居庸关长城</strong>
-										<p>
-										<img style='float:right;margin:0 4px 22px' id='imgDemo' src='./img/place/beijing/IMG_1107.JPG' width='139' height='104'/>
-										</p>
 										<p>从下面看很雄伟，也很陡，最陡的地方几乎要直上直下了。</p>
 										`,
 									"icon": "music"
