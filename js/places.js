@@ -15,60 +15,61 @@ map.on('load', function () {
 	map.loadImage(
 		'./img/custom/sign.png',
 		function (error, image) {
-		if (error) throw error;
-		 
-		// Add the image to the map style.
-		map.addImage('sign', image);
-		
-		// Add a layer showing the places.
-		map.addLayer({
-			"id": "places",
-			"type": "symbol",
-			"source": {
-				"type": "geojson",
-				"data": {
-					"type": "FeatureCollection",
-					"features": [
-						// 北京
-						{
-							"type": "Feature",
-							"properties": {
-								"description": 
-									`<strong>故宫</strong>
-									<p>第一次去北京跟我哥一起去的，很多人排队，当时有租学生证的，买票会便宜不少，哈哈！</p>`,
-								"icon": "music"
-							},
-							"geometry": {
-								"type": "Point",
-								"coordinates": [116.404, 39.925]
+			if (error) throw error;
+			 
+			// Add the image to the map style.
+			map.addImage('sign', image);
+			
+			// Add a layer showing the places.
+			map.addLayer({
+				"id": "places",
+				"type": "symbol",
+				"source": {
+					"type": "geojson",
+					"data": {
+						"type": "FeatureCollection",
+						"features": [
+							// 北京
+							{
+								"type": "Feature",
+								"properties": {
+									"description": 
+										`<strong>故宫</strong>
+										<p>第一次去北京跟我哥一起去的，很多人排队，当时有租学生证的，买票会便宜不少，哈哈！</p>`,
+									"icon": "music"
+								},
+								"geometry": {
+									"type": "Point",
+									"coordinates": [116.404, 39.925]
+								}
 							}
-						}
-						,{
-							"type": "Feature",
-							"properties": {
-								"description": 
-									`<strong>居庸关长城</strong>
-									<p>
-									<img style='float:right;margin:0 4px 22px' id='imgDemo' src='./img/place/beijing/IMG_1107.JPG' width='139' height='104'/>
-									</p>
-									<p>从下面看很雄伟，也很陡，最陡的地方几乎要直上直下了。</p>
-									`,
-								"icon": "music"
-							},
-							"geometry": {
-								"type": "Point",
-								"coordinates": [116.079159, 40.296972]
+							,{
+								"type": "Feature",
+								"properties": {
+									"description": 
+										`<strong>居庸关长城</strong>
+										<p>
+										<img style='float:right;margin:0 4px 22px' id='imgDemo' src='./img/place/beijing/IMG_1107.JPG' width='139' height='104'/>
+										</p>
+										<p>从下面看很雄伟，也很陡，最陡的地方几乎要直上直下了。</p>
+										`,
+									"icon": "music"
+								},
+								"geometry": {
+									"type": "Point",
+									"coordinates": [116.079159, 40.296972]
+								}
 							}
-						}
-					]
+						]
+					}
+				},
+				"layout": {
+				"icon-image": "sign",
+				"icon-allow-overlap": true
 				}
-			},
-			"layout": {
-			"icon-image": "sign",
-			"icon-allow-overlap": true
-			}
-		});
-		})
+			});
+		}
+	)
 	 
 	// When a click event occurs on a feature in the places layer, open a popup at the
 	// location of the feature, with description HTML from its properties.
