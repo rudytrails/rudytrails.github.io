@@ -20,19 +20,8 @@
 	</style>
 </head>
 	<div id='map' class="mapboxgl-map"></div>
+<script src='./js/places.js'></script>
 <script>
-	mapboxgl.accessToken = 'pk.eyJ1IjoicnVkeW1lbW8iLCJhIjoiY2tuZmVwMWMyMXB4azJvb281amRlN2xwYyJ9.zy0U0Y3QC3aJe_SAOfjRWg';
-	var map = new mapboxgl.Map({
-		container: 'map',
-		style: 'mapbox://styles/mapbox/streets-v11',
-		center: [115.425807,34.986443],
-		minZoom: 2,
-		zoom: 1
-	});
-	mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js');
-	map.addControl(new MapboxLanguage({
-	  defaultLanguage: 'zh-Hans'
-	}));
 	var popup = new mapboxgl.Popup({closeOnClick: true,closeButton: false})
 		.setLngLat([115.425807,34.986443])
 		.setHTML(`<h4>”有勇气去改变哪些可以改变的事；<br>&nbsp;&nbsp;有度量去容忍哪些不能改变的事；<br>&nbsp;&nbsp;有智慧区别以上两类事。”</h4>`)
