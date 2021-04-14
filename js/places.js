@@ -57,6 +57,48 @@ map.on('load', function () {
 									"coordinates": [116.079159, 40.296972]
 								}
 							}
+							,{
+								"type": "Feature",
+								"properties": {
+									"description": 
+										`<strong>圆明园遗址</strong>
+										<p></p>
+										`,
+									"icon": "music"
+								},
+								"geometry": {
+									"type": "Point",
+									"coordinates": [116.303548, 40.007763]
+								}
+							}
+							,{
+								"type": "Feature",
+								"properties": {
+									"description": 
+										`<strong>香山</strong>
+										<p></p>
+										`,
+									"icon": "music"
+								},
+								"geometry": {
+									"type": "Point",
+									"coordinates": [116.188382, 39.990412]
+								}
+							}
+							,{
+								"type": "Feature",
+								"properties": {
+									"description": 
+										`<strong>盛辉公寓</strong>
+										<p></p>
+										`,
+									"icon": "music"
+								},
+								"geometry": {
+									"type": "Point",
+									"coordinates": [116.296524, 40.154127]
+								}
+							}
 						]
 					}
 				},
