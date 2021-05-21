@@ -6,6 +6,14 @@ var map = new mapboxgl.Map({
 	minZoom: 2,
 	zoom: 1
 });
+map.on('mousemove', function (e) {
+    document.getElementById('info').innerHTML =       /* innerHTML 属性设置或返回表格行的开始和结束标签之间的 HTML  */
+        // e.point is the x, y coordinates of the mousemove event relative
+        // to the top-left corner of the map
+        JSON.stringify(e.point) + '<br />' +
+            // e.lngLat is the longitude, latitude geographical position of the event
+        JSON.stringify(e.lngLat);  /* JSON.stringify() 方法可以将任意的 JavaScript 值序列化成 JSON 字符串 */
+});
 mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js');
 map.addControl(new MapboxLanguage({
   defaultLanguage: 'zh-Hans'
@@ -212,6 +220,7 @@ map.on('load', function () {
 								}
 							}
 							// 日本
+								// 名古屋
 							,{
 								"type": "Feature",
 								"properties": {
@@ -237,6 +246,86 @@ map.on('load', function () {
 								"geometry": {
 									"type": "Point",
 									"coordinates": [136.909072, 35.125538]
+								}
+							}
+							// 京都
+							,{
+								"type": "Feature",
+								"properties": {
+									"description": 
+										`<strong>金阁寺（2017-12-31）</strong>
+										<p></p>
+										`,
+									"icon": "music"
+								},
+								"geometry": {
+									"type": "Point",
+									"coordinates": [135.729421,35.0392937]
+								}
+							},{
+								"type": "Feature",
+								"properties": {
+									"description": 
+										`<strong>伏见稻荷大社（2018-01-01）</strong>
+										<p></p>
+										`,
+									"icon": "music"
+								},
+								"geometry": {
+									"type": "Point",
+									"coordinates": [135.773352,34.967066]
+								}
+							},{
+								"type": "Feature",
+								"properties": {
+									"description": 
+										`<strong>FUJITAYAKYOTO（2017-12-31-2018-01-01）</strong>
+										<p></p>
+										`,
+									"icon": "music"
+								},
+								"geometry": {
+									"type": "Point",
+									"coordinates": [135.747934,34.994769]
+								}
+							},{
+								"type": "Feature",
+								"properties": {
+									"description": 
+										`<strong>二条城（2017-12-31）</strong>
+										<p></p>
+										`,
+									"icon": "music"
+								},
+								"geometry": {
+									"type": "Point",
+									"coordinates": [135.747574,35.013897]
+								}
+							},{
+								"type": "Feature",
+								"properties": {
+									"description": 
+										`<strong>清水寺（2018-01-01）</strong>
+										<p></p>
+										`,
+									"icon": "music"
+								},
+								"geometry": {
+									"type": "Point",
+									"coordinates": [135.784229,34.994139]
+								}
+							},{
+								"type": "Feature",
+								"properties": {
+									"description": 
+										`<strong>二年坡和三年坡（2018-01-01）</strong>
+										<p></p>
+										`,
+									"icon": "music"
+								},
+								"geometry": {
+									"type": "Point",
+									"coordinates": [135.780685,34.996198]
 								}
 							}
 						]

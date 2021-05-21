@@ -17,9 +17,23 @@
 			bottom: 0;
 			width: 100%;
 		}
+		#info {
+			display: block;
+			position: relative;
+			margin: 0px auto;
+			width: 50%;
+			padding: 10px;
+			border: none;
+			border-radius: 3px;
+			font-size: 12px;
+			text-align: center;
+			color: #222;
+			background: #fff;
+		}
 	</style>
 </head>
 	<div id='map' class="mapboxgl-map"></div>
+	<pre id='info'></pre>
 <script src='./js/places.js'></script>
 <script>
 	var popup = new mapboxgl.Popup({closeOnClick: true,closeButton: false})
