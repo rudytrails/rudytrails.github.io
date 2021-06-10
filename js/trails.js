@@ -67,7 +67,13 @@ var points = [
 	,{"lng":136.909072, "lat":35.125538, "title":"热田神宫", "img":"img/place/dalian/theairofcat.jpg", "content":"独自出门坐地铁按照地图去了热田神宫，回来在松屋吃了碗拉面，然后去超市买了点东西，算是没有障碍吧。"}
 	
 	// 京都府
-	
+	,{"lng":135.729218, "lat":35.039421, "title":"金阁寺", "img":"img/place/dalian/theairofcat.jpg", "content":"学习日本语的时候老师经常说到金阁寺银阁寺，这次只去了金阁寺，都说穿金不如戴银，期待下次去了。"}
+	,{"lng":135.78419, "lat":34.995892, "title":"清水寺", "img":"img/place/dalian/theairofcat.jpg", "content":"学习日本语的时候老师经常说到金阁寺银阁寺，这次只去了金阁寺，都说穿金不如戴银，期待下次去了。"}
+	,{"lng":135.780907, "lat":34.99637, "title":"二年坡和三年坡", "img":"img/place/jingdu/wallhaven-2eq3gg.jpg", "content":"很有风格的一个地方，找网图代替了，当时拍的不是很好，没有全景，人也挺多的。"}
+	,{"lng":135.775185, "lat":35.005115, "title":"花见小路", "img":"img/place/jingdu/wallhaven-2eq3gg.jpg", "content":"很有风格的一个地方，找网图代替了，当时拍的不是很好，没有全景，人也挺多的。"}
+	,{"lng":135.748219, "lat":35.014229, "title":"二条城", "img":"img/place/jingdu/wallhaven-2eq3gg.jpg", "content":"很有风格的一个地方，找网图代替了，当时拍的不是很好，没有全景，人也挺多的。"}
+	,{"lng":135.747934, "lat":34.994769, "title":"FUJITAYAKYOTO", "img":"img/place/jingdu/wallhaven-2eq3gg.jpg", "content":"京都居住的酒店，在那里跟一群素昧平生的人一起跨年。伴随着跨年夜的钟声，有日本小哥给做的年糕果腹，有纽约小弟的WHISKY助兴，有意大利的摄影师做纪念，有香港的妹纸来翻译，有深圳的银行家的法国故事，还有凑了两双耳朵的程序员，哈哈，不亦乐乎！"}
+
 	// 大阪府
 	
 	// 神戸市
