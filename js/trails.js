@@ -13,9 +13,9 @@ var cityControl = new BMapGL.CityListControl({
 });
 // 将控件添加到地图上
 map.addControl(cityControl);
-map.setMapStyleV2({     
+/*map.setMapStyleV2({     
   styleId: '4451b1c86197a837621c030aa2eb4930'
-});
+});*/
 
 var points = [
 	// 北京
@@ -52,6 +52,10 @@ var points = [
 	// 苏州
 	
 	// 杭州
+
+	// 厦门
+
+	// 福州
 	
 	// 佛山
 	
