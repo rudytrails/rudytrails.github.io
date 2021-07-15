@@ -5,14 +5,14 @@ map.enableScrollWheelZoom(true);
 var navi3DCtrl = new BMapGL.NavigationControl3D();  // 添加3D控件
 map.addControl(navi3DCtrl);
 // 创建城市选择控件
-var cityControl = new BMapGL.CityListControl({
+/*var cityControl = new BMapGL.CityListControl({
 	// 控件的停靠位置（可选，默认左上角）
 	anchor: BMAP_ANCHOR_TOP_LEFT,
 	// 控件基于停靠位置的偏移量（可选）
 	offset: new BMapGL.Size(10, 5)
 });
 // 将控件添加到地图上
-map.addControl(cityControl);
+map.addControl(cityControl);*/
 /*map.setMapStyleV2({     
   styleId: '4451b1c86197a837621c030aa2eb4930'
 });*/
